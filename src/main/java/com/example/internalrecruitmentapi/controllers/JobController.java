@@ -1,6 +1,6 @@
 package com.example.internalrecruitmentapi.controllers;
 
-import com.example.internalrecruitmentapi.domain.job.Job;
+import com.example.internalrecruitmentapi.domain.Job;
 import com.example.internalrecruitmentapi.dto.JobRequestDTO;
 import com.example.internalrecruitmentapi.dto.JobResponseDTO;
 import com.example.internalrecruitmentapi.repositories.JobRepository;

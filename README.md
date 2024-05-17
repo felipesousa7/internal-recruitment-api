@@ -27,10 +27,21 @@ Esta é uma aplicação web criada para facilitar o processo de recrutamento int
 * controllers: Controladores REST para endpoints da API.
 
 ### Endpoints Disponíveis
+
+#### Autenticação
 * POST /auth/login: Autentica usuário e retorna token JWT.
 * POST /auth/register: Registra novo usuário e retorna token JWT.
+
+#### Vagas de Emprego
 * POST /jobs/create: Cria nova vaga de emprego.
 * PUT /jobs/update/{id}: Atualiza vaga de emprego existente.
 * DELETE /jobs/delete/{id}: Remove vaga de emprego.
 * GET /jobs/list: Lista todas as vagas de emprego.
 * GET /jobs/find/{id}: Retorna detalhes de uma vaga de emprego.
+
+#### Inscrições
+* POST /subscriptions/create: Cria nova inscrição.
+* PUT /subscriptions/update/{id}: Atualiza inscrição existente.
+* DELETE /subscriptions/delete/{id}: Remove inscrição.
+* GET /subscriptions/list: Lista todas as inscrições.
+* GET /subscriptions/find/{id}: Retorna detalhes de uma inscrição.

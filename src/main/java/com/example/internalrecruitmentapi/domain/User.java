@@ -1,4 +1,4 @@
-package com.example.internalrecruitmentapi.domain.user;
+package com.example.internalrecruitmentapi.domain;
 
 import jakarta.persistence.*;
 import java.util.UUID;

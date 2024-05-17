@@ -1,6 +1,6 @@
 package com.example.internalrecruitmentapi.infra.security;
 
-import com.example.internalrecruitmentapi.domain.user.User;
+import com.example.internalrecruitmentapi.domain.User;
 import com.example.internalrecruitmentapi.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,6 +1,6 @@
 package com.example.internalrecruitmentapi.repositories;
 
-import com.example.internalrecruitmentapi.domain.job.Job;
+import com.example.internalrecruitmentapi.domain.Job;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

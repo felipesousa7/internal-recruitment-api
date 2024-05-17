@@ -1,13 +1,12 @@
 package com.example.internalrecruitmentapi.controllers;
 
-import com.example.internalrecruitmentapi.domain.user.User;
+import com.example.internalrecruitmentapi.domain.User;
 import com.example.internalrecruitmentapi.dto.LoginRequestDTO;
 import com.example.internalrecruitmentapi.dto.RegisterRequestDTO;
 import com.example.internalrecruitmentapi.dto.ResponseDTO;
 import com.example.internalrecruitmentapi.infra.security.TokenService;
 import com.example.internalrecruitmentapi.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -43,7 +42,7 @@ public class AuthController {
         if(user.isEmpty()) {
             User newUser = new User();
             newUser.setPassword(passwordEncoder.encode(body.password()));
-            newUser.setEmail(String.valueOf(body.admin()));
+            newUser.setAdmin(body.admin());
             newUser.setEmail(body.email());
             newUser.setName(body.name());
             this.repository.save(newUser);
